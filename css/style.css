@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.container{
+    max-width: 100vw;
+    min-height: 80vh;
+    
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.container-form{
+    width: 30%;
+    padding: 0 15px;
+}
+
+.container-form input,
+.container-form .check-color{
+    margin-bottom: 15px;
+}
+
+.container-form input[type='text'],
+.container-form input[type='submit']{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-form .save{
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+}
+
+.container-form .save:hover{
+    background: #007bff;
+}
+
+.container-tasks{
+    width: 70%;
+    padding: 0 15px;
+}
+
+.container-tasks .task{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items:flex-start;
+
+    width: 100%;
+    min-height: 60px;
+
+    padding: 20px;
+    margin-bottom: 10px;
+
+    border-radius: 5px;
+}
+
+.container-tasks .task h3{
+    margin: 0 40px;
+}
+
+
+
+.container-tasks .task a{
+    background: #f44336;
+
+    padding: 15px;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;;
+}
+
+.container-tasks .task a:hover{
+    background: #ef5350 ;
+}
+
+
+
+
+
