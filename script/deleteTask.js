@@ -10,8 +10,8 @@ export function deleteTask(){
 
             let tasks = JSON.parse(localStorage.getItem('listTasks'));
             tasks.forEach( (element, index) => {
-                if(element.task == title){
-                    tasks.splice(element, 1);
+                if(element.task === title){
+                    tasks.splice(index, 1);
                     localStorage.setItem('listTasks', JSON.stringify(tasks));
                     return;
                 }

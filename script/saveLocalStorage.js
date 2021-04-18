@@ -1,12 +1,13 @@
 const listTasks = [];
 
-export function saveLocalStorage(task, color){
+export function saveLocalStorage(task, color, check){
     
     if(localStorage.getItem('listTasks') === null){
         listTasks.push(
             {
                 task,
-                color
+                color,
+                check
             }
         );
         localStorage.setItem('listTasks', JSON.stringify(listTasks));
@@ -15,7 +16,8 @@ export function saveLocalStorage(task, color){
         listTasks.push(
             {
                 task,
-                color
+                color,
+                check
             });
         localStorage.setItem('listTasks', JSON.stringify(listTasks));
     }

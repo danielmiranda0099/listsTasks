@@ -20,7 +20,7 @@ export function createFromForm(){
             }
 
             createTask(title, color);
-            saveLocalStorage(title, color);
+            saveLocalStorage(title, color, false);
             $form.reset();
         }
 
