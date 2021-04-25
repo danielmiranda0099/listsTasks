@@ -7,6 +7,7 @@ export  function createTask(title, color, check = false){
     
     $task.classList.add('task');
     $task.setAttribute('id', title);
+    $task.draggable = true;
     $task.setAttribute('data-title', title);
     $task.style.background = color;
 
