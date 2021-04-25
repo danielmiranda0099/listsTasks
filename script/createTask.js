@@ -7,8 +7,10 @@ export  function createTask(title, color, check = false){
     
     $task.classList.add('task');
     $task.setAttribute('id', title);
-    $task.draggable = true;
     $task.setAttribute('data-title', title);
+    $task.setAttribute('data-color', color);
+    $task.setAttribute('data-check', check);
+    $task.draggable = true;
     $task.style.background = color;
 
     $task.innerHTML = ` <input class="inputCheck" type="checkbox" name="" id="id-check ${title}">
@@ -19,7 +21,7 @@ export  function createTask(title, color, check = false){
 
     $containerTasks.appendChild($task); 
 
-    if(check){
+    if(check === true){
         let $h3 = d.getElementById(`id-h3-${title}`);
         let $check = d.getElementById(`id-check ${title}`);
         $task.style.opacity = 0.7;
