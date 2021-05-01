@@ -6,7 +6,7 @@ export function deleteTask(){
     d.addEventListener("click", element => {
         if(element.target.matches(".delete")){
 
-            let title = element.target.parentElement.dataset.title;
+            let title = element.target.parentElement.parentElement.dataset.title;
 
             let tasks = JSON.parse(localStorage.getItem('listTasks'));
             tasks.forEach( (element, index) => {
@@ -17,7 +17,7 @@ export function deleteTask(){
                 }
             });
     
-            element.target.parentElement.remove();
+            element.target.parentElement.parentElement.remove();
         }
     });
 }

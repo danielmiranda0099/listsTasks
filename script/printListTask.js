@@ -7,7 +7,6 @@ export function printListTask(){
         tasks = JSON.parse(localStorage.getItem('listTasks'));
         tasks.forEach(element => {
             createTask(element.task, element.color, element.check);
-            console.log(element.check)
         })  
     }
 }

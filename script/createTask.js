@@ -13,9 +13,11 @@ export  function createTask(title, color, check = false){
     $task.draggable = true;
     $task.style.background = color;
 
-    $task.innerHTML = ` <input class="inputCheck" type="checkbox" name="" id="id-check ${title}">
-                        <h3 id="id-h3-${title}">${title}</h3>
-                        <a class="delete">Delete</a>`;
+    $task.innerHTML = ` <h3 id="id-h3-${title}">${title}</h3>
+                        <div class="options">
+                        <input class="inputCheck" type="checkbox" name="" id="id-check ${title}">
+                        <i class="fas fa-trash-alt delete"></i>
+                        </div>`;
 
     
 
@@ -26,7 +28,7 @@ export  function createTask(title, color, check = false){
         let $check = d.getElementById(`id-check ${title}`);
         $task.style.opacity = 0.7;
         $check.checked = true;
-        console.log($h3);
         $h3.style.textDecoration = 'line-through';
+        $h3.style.color = "gray";
     }
 }

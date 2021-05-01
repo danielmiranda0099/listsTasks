@@ -11,7 +11,7 @@ export function doneTask(){
 
             let tasks = JSON.parse(localStorage.getItem('listTasks'));
             tasks.forEach((el) => {
-                if(el.task == e.target.parentElement.getAttribute('id')){
+                if(el.task == e.target.parentElement.parentElement.getAttribute('id')){
                     el.check = $check.checked;
                     localStorage.setItem('listTasks', JSON.stringify(tasks));
                     while($containerTasks.firstChild){
