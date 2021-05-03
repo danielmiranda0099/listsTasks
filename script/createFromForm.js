@@ -17,18 +17,20 @@ export function createFromForm(){
 
             const tasks = JSON.parse(localStorage.getItem('listTasks'));
 
-            function checkTask(tasks, task){
-                for(let i=0; i < tasks.length; i++){
-                    if(tasks[i].task === task) return true;
+            if(tasks){
+                function checkTask(tasks, task){
+                    for(let i=0; i < tasks.length; i++){
+                        if(tasks[i].task === task) return true;
+                    }
+                    return false;
                 }
-                return false;
-            }
 
-            const isTask = checkTask(tasks, title);
+                const isTask = checkTask(tasks, title);
 
-            if(isTask){
-                alertMessage();
-                return;
+                if(isTask){
+                    alertMessage();
+                    return;
+                }
             }
 
             if($inputColor){
