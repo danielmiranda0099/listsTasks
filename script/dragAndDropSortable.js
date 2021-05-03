@@ -34,7 +34,6 @@ export function dragAndDropSortable(){
         if(e.target.matches('.task')){
             $boxDrag.classList.remove('red');
             const $tasks = d.querySelectorAll('.task');
-            console.log($tasks)
             $tasks.forEach( el => {
                 tasks.push(
                     {
@@ -43,7 +42,6 @@ export function dragAndDropSortable(){
                         check: el.getAttribute('data-check') == "true" ? true : false
                     }
                 );
-                console.log(el.getAttribute('data-check'));
             });
             localStorage.setItem('listTasks', JSON.stringify(tasks));
             tasks = [];

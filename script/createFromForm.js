@@ -1,5 +1,6 @@
 import {createTask} from "./createTask.js";
 import {saveLocalStorage} from "./saveLocalStorage.js";
+import {alertMessage} from "./alertMessage.js";
 
 const d = document;
 
@@ -25,7 +26,10 @@ export function createFromForm(){
 
             const isTask = checkTask(tasks, title);
 
-            if(isTask) return;
+            if(isTask){
+                alertMessage();
+                return;
+            }
 
             if($inputColor){
                 color = $inputColor.value;
