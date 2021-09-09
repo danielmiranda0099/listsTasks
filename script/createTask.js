@@ -16,7 +16,7 @@ export  function createTask(title, color, check = false){
     $task.innerHTML = ` <h3 id="id-h3-${title}">${title}</h3>
                         <div class="options">
                         <input class="inputCheck" type="checkbox" name="" id="id-check ${title}">
-                        <i class="fas fa-trash-alt delete"></i>
+                        <i class="far fa-trash-alt delete"></i>
                         </div>`;
 
     

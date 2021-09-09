@@ -1,0 +1,47 @@
+[33mcommit 54bf7ba7f0c3e5be28c921a890428c5a302be04c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Mon May 3 08:55:22 2021 -0500
+
+    Last Details
+
+[33mcommit af86a9b8bb38f18f2d0c59f423ef335235727167[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Sun May 2 22:45:28 2021 -0500
+
+    README
+
+[33mcommit bf11d7e5417182ba1f44e731628f33816f99fcaa[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Sun May 2 22:35:34 2021 -0500
+
+    Done last commit
+
+[33mcommit 347db661bd750a2f7a251842de5e3291a7e66495[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Fri Apr 30 23:44:55 2021 -0500
+
+    missing details
+
+[33mcommit a5f0dbf4d158caae5a5eac8141bfd62d8f2a5f71[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Sat Apr 24 21:30:07 2021 -0500
+
+    Done
+
+[33mcommit f28e6eaad438e53ebb618af9c7b889a370986e52[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Sat Apr 24 20:19:49 2021 -0500
+
+    added the funcionality drag and drop sortable
+
+[33mcommit dbb1168b1ac8b07116910c239db180d1cb186164[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Sat Apr 17 19:30:09 2021 -0500
+
+    the funcionality task Done added and refactorin. Remains to add responsive web and drag and drop
+
+[33mcommit d0b7320c1820fe89c976f2f67ab83cb588048e6f[m
+Author: dmc0099 <danielmesa877@gmail.com>
+Date:   Wed Apr 14 17:16:41 2021 -0500
+
+    list Task  ---> it is necessary to add responsive web and create the funcionality of the finished task
